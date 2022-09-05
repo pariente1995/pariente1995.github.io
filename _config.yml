@@ -1,21 +1,21 @@
 # Site Settings
 baseurl: ""
-url : "https://naye0ng.github.io"
+url : "https://pariente1995.github.io"
 
 # Blog Settings
 theme_settings :
-  title : Grape Theme
+  title : SeHyeok's Portfolio
   favicon : assets/favicon.ico
 
   # Profile Settings
   profile :
     image : assets/img/smile.png
-    username : Nayeong Kim
-    description : creator of Grape-Theme! Grape-Theme is my first jekyll theme and you can customize this theme easily.
+    username : SeHyeok Park
+    description : 안녕하세요 박세혁입니다.
     experience :
-      - start : 2017-05-03
-        end : 2018-05-06
-        experience : company name, title
+      - start : 2020-01-01
+        end : 2022-06-30
+        experience : 영림원소프트랩
     skills : 
       - skill : HTML5 & CSS
         value : 85  # Percent value
@@ -24,7 +24,7 @@ theme_settings :
   icons :
     email:  # Full email address, e.g. "sample@google.com"
     linkedin:  # Full URL 
-    github: naye0ng
+    github: pariente1995
     gitlab: 
     bitbucket: 
     google_plus:
