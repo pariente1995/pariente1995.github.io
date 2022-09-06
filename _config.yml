@@ -41,7 +41,7 @@ theme_settings :
     instagram: se_spoon
 
   # Disqus
-  disqus_shortname :
+  disqus_shortname : sehyeok-blog
 
 # Pagination
 paginate: 5
