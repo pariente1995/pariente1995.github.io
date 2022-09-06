@@ -15,10 +15,10 @@ theme_settings :
     experience :
       - start : 2020-01-01
         end : 2022-06-30
-        experience : {{영림원소프트랩}, {ERP 프로세스 개발}}
+        experience : 영림원소프트랩 <p style="font-weight:500;font-size:13px;">ERP 프로세스 개발</p>
       - start : 2022-07-26
         end : 2023-01-09
-        experience : {AWS클라우드 기반 자바(JAVA) 웹개발}, {국비교육}
+        experience : AWS클라우드 기반 자바(JAVA) <p style="font-weight:500;font-size:13px;">웹개발 국비교육</p>
     skills : 
       - skill : JAVA
         value : 80  # Percent value
