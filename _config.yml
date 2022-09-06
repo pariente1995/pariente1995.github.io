@@ -12,7 +12,7 @@ theme_settings :
     image : assets/img/smile.png
     username : SeHyeok Park
     description : 먹는 것과 맛집 탐방을 좋아하는 웹 개발자 준비생입니다. <br> 현재 AWS클라우드 기반 자바(JAVA) 웹개발 국비교육 과정 중에 있습니다.
-                  <br><br> ps. 인스타그램을 통하여 맛집을 사람들과 공유 및 기록하고 있습니다.
+                  <br><br><br> <small>PS. 인스타그램을 통하여 맛집을 사람들과 공유 및 기록하고 있습니다.</small>
     experience :
       - start : 2020-01-01
         end : 2022-06-30
