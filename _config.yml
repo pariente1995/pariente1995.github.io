@@ -17,8 +17,10 @@ theme_settings :
         end : 2022-06-30
         experience : 영림원소프트랩
     skills : 
+      - skill : Java
+        value : 80  # Percent value
       - skill : HTML5 & CSS
-        value : 85  # Percent value
+        value : 80  # Percent value
         
   # Icons
   icons :
