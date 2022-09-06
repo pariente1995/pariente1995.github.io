@@ -22,7 +22,7 @@ theme_settings :
         
   # Icons
   icons :
-    email:  # Full email address, e.g. "sample@google.com"
+    email: pariente@naver.com # Full email address, e.g. "sample@google.com"
     linkedin:  # Full URL 
     github: pariente1995
     gitlab: 
@@ -31,7 +31,7 @@ theme_settings :
     twitter:
     youtube:
     facebook:
-    instagram:
+    instagram: https://www.instagram.com/se_spoon
 
   # Disqus
   disqus_shortname :
