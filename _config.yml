@@ -18,7 +18,7 @@ theme_settings :
         experience : 영림원소프트랩
       - start : 2022-07-26
         end : 2023-01-09
-        experience : AWS클라우드 기반 자바(JAVA) 웹개발
+        experience : AWS클라우드 기반 자바(JAVA) 웹개발, 국비교육
     skills : 
       - skill : JAVA
         value : 80  # Percent value
