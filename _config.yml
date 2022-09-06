@@ -16,11 +16,16 @@ theme_settings :
       - start : 2020-01-01
         end : 2022-06-30
         experience : 영림원소프트랩
+      - start : 2022-07-26
+        end : 2023-01-09
+        experience : AWS클라우드 기반 자바(JAVA) 웹개발
     skills : 
-      - skill : Java
+      - skill : JAVA
         value : 80  # Percent value
       - skill : HTML5 & CSS
         value : 80  # Percent value
+      - skill : Javascript
+        value : 0  # Percent value
         
   # Icons
   icons :
