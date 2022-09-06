@@ -31,7 +31,7 @@ theme_settings :
     twitter:
     youtube:
     facebook:
-    instagram: https://www.instagram.com/se_spoon
+    instagram: se_spoon
 
   # Disqus
   disqus_shortname :
