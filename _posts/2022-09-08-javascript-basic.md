@@ -50,6 +50,7 @@ comments : True
 
 - 1-2. head 영역 안에 자바스크립트 작성
   - 전체 html 문서에 자바스크립트를 적용하고자 하는 경우
+
 ```html
 <head>
   <meta charset="UTF-8">
@@ -74,6 +75,7 @@ comments : True
 - 단점: 코드를 바로 확인하기 불편함(자바스크립트 파일을 찾아야 한다).
 
 `js_basic01.js 파일`
+
 ```javascript
 let text = "자바스크립트의 세상에 오신 것을 환영합니다!!!";
 
