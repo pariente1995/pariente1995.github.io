@@ -61,9 +61,6 @@ comments : True
     }
   </script>
 </head>
-
-...
-
 <body>
   <script>
     welcome(text);
