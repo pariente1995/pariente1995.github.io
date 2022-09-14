@@ -16,13 +16,15 @@ comments : True
 
 ```html
 <body>
-  <h3>alert() 함수</h3>
+  <h3>--- alert() 함수 ---</h3>
   <button onclick="alert('알림 버튼을 눌렀습니다.');">알림 버튼</button><br>
     <script>
       alert("출력 함수를 통해 내용을 출력합니다.");
     </script>
 </body>
 ```
+![alert() 함수 결과]({{ site.baseurl }}/assets/img/post3-1.png)
+![alert() 함수 결과]({{ site.baseurl }}/assets/img/post3-2.png)
 
 ## 2. document.write() 함수
 - 함수 안의 내용을 웹페이지로 출력.
@@ -30,12 +32,13 @@ comments : True
 
 ```html
 <body>
-  <h3>document.write() 함수</h3>
+  <h3>--- document.write() 함수 ---</h3>
     <script>
       document.write("출력함수를 통해 내용을 출력합니다.");
     </script>
 </body>
 ```
+![document.write() 함수]({{ site.baseurl }}/assets/img/post3-3.png)
 
 ## 3. console.log() 함수
 - 함수 안의 결과를 콘솔창으로 출력. (크롬에서 F12번을 눌러 콘솔Tab에서 확인)
@@ -43,7 +46,7 @@ comments : True
 
 ```html
 <body>
-  <h3>console.log() 함수</h3>
+  <h3>--- console.log() 함수 ---</h3>
     <script>
       let a = 10, b = 20;
       let sum = a + b;
@@ -52,3 +55,4 @@ comments : True
     </script>
 </body>
 ```
+![console.log() 함수]({{ site.baseurl }}/assets/img/post3-4.png)
