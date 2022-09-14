@@ -24,9 +24,6 @@ comments : True
 </body>
 ```
 
-![alert() 함수 결과-1]({{ site.baseurl }}/assets/img/post2-1.png)
-
-
 ## 2. document.write() 함수
 - 함수 안의 내용을 웹페이지로 출력.
 - HTML & CSS 태그를 적으면, 태그를 적용하여 출력.
@@ -39,8 +36,6 @@ comments : True
     </script>
 </body>
 ```
-
-![document.write() 함수 결과]({{ site.baseurl }}/assets/img/post2-3.png)
 
 ## 3. console.log() 함수
 - 함수 안의 결과를 콘솔창으로 출력. (크롬에서 F12번을 눌러 콘솔Tab에서 확인)
