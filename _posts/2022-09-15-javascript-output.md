@@ -16,7 +16,7 @@ comments : True
 
 ```html
 <body>
-  <h3>--- alert() 함수 ---</h3>
+  <h3>alert() 함수</h3>
   <button onclick="alert('알림 버튼을 눌렀습니다.');">알림 버튼</button><br>
     <script>
       alert("출력 함수를 통해 내용을 출력합니다.");
@@ -30,7 +30,7 @@ comments : True
 
 ```html
 <body>
-  <h3>--- document.write() 함수 ---</h3>
+  <h3>document.write() 함수</h3>
     <script>
       document.write("출력함수를 통해 내용을 출력합니다.");
     </script>
@@ -43,7 +43,7 @@ comments : True
 
 ```html
 <body>
-  <h3>--- console.log() 함수 ---</h3>
+  <h3>console.log() 함수</h3>
     <script>
       let a = 10, b = 20;
       let sum = a + b;
