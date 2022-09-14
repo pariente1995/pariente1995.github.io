@@ -23,8 +23,9 @@ comments : True
     </script>
 </body>
 ```
+
 ![alert() 함수 결과-1]({{ site.baseurl }}/assets/img/post2-1.png)
-![alert() 함수 결과-2]({{ site.baseurl }}/assets/img/post2-2.png)
+
 
 ## 2. document.write() 함수
 - 함수 안의 내용을 웹페이지로 출력.
@@ -38,6 +39,7 @@ comments : True
     </script>
 </body>
 ```
+
 ![document.write() 함수 결과]({{ site.baseurl }}/assets/img/post2-3.png)
 
 ## 3. console.log() 함수
@@ -55,4 +57,3 @@ comments : True
     </script>
 </body>
 ```
-![console.log() 함수 결과]({{ site.baseurl }}/assets/img/post2-4.png)
