@@ -23,12 +23,9 @@ comments : True
     </script>
 </body>
 ```
-![alert() 함수 결과]({{ site.baseurl }}/assets/img/post3-1.png){: .width-80}
-![alert() 함수 결과]({{ site.baseurl }}/assets/img/post3-1.png){: .width-30} ![alert() 함수 결과]({{ site.baseurl }}/assets/img/post3-1.png){: .width-50}
-![alert() 함수 결과]({{ site.baseurl }}/assets/img/post3-1.png){: .width-50}
-![alert() 함수 결과]({{ site.baseurl }}/assets/img/post3-1.png){: .width-80}
+
 ![alert() 함수 결과]({{ site.baseurl }}/assets/img/post3-1.png){: width="80%"}
-![alert() 함수 결과]({{ site.baseurl }}/assets/img/post3-2.png){: width="50%"}
+![alert() 함수 결과]({{ site.baseurl }}/assets/img/post3-2.png){: width="60%"}
 
 ## 2. document.write() 함수
 - 함수 안의 내용을 웹페이지로 출력.
@@ -42,7 +39,7 @@ comments : True
     </script>
 </body>
 ```
-![document.write() 함수]({{ site.baseurl }}/assets/img/post3-3.png)
+![document.write() 함수]({{ site.baseurl }}/assets/img/post3-3.png){: width="60%"}
 
 ## 3. console.log() 함수
 - 함수 안의 결과를 콘솔창으로 출력. (크롬에서 F12번을 눌러 콘솔Tab에서 확인)
@@ -59,4 +56,4 @@ comments : True
     </script>
 </body>
 ```
-![console.log() 함수]({{ site.baseurl }}/assets/img/post3-4.png)
+![console.log() 함수]({{ site.baseurl }}/assets/img/post3-4.png){: width="60%"}
