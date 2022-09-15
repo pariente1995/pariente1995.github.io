@@ -18,10 +18,9 @@
       }
     }
     .text-wrap {
-      color: #000000;
+      color: #fff;
       .description {
         margin: 10px 0;
-        color: #000000;
         font-size: 0.95rem;
       }
       @media (max-width: 767px) {
@@ -32,12 +31,12 @@
         i {
           width: 35px;
           height: 35px;
-          color: #000000;
+          color: #fff;
           background-color: $theme-dark;
           line-height: 35px;
         }
         i:hover {
-          background-color: #000000;
+          background-color: #fff;
           color: $theme-dark;
         }
       }
