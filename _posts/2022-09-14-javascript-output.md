@@ -39,7 +39,7 @@ comments : True
     </script>
 </body>
 ```
-![document.write() 함수]({{ site.baseurl }}/assets/img/post3-3.png){: width="60%"}
+![document.write() 함수]({{ site.baseurl }}/assets/img/post3-3.png){: width="50%"}
 
 ## 3. console.log() 함수
 - 함수 안의 결과를 콘솔창으로 출력. (크롬에서 F12번을 눌러 콘솔Tab에서 확인)
