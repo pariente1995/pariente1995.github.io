@@ -1,6 +1,7 @@
 # Site Settings
 baseurl: ""
 url : "https://pariente1995.github.io"
+timezone: Asia/Seoul
 
 # Blog Settings
 theme_settings :
