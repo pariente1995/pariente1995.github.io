@@ -23,10 +23,11 @@ comments : True
     </script>
 </body>
 ```
-![alert() 함수 결과]({{ site.baseurl }}/assets/img/post3-1.png)
+![alert() 함수 결과]({{ site.baseurl }}/assets/img/post3-1.png){: .width-80}
 ![alert() 함수 결과]({{ site.baseurl }}/assets/img/post3-1.png){: .width-30} ![alert() 함수 결과]({{ site.baseurl }}/assets/img/post3-1.png){: .width-50}
 ![alert() 함수 결과]({{ site.baseurl }}/assets/img/post3-1.png){: .width-50}
 ![alert() 함수 결과]({{ site.baseurl }}/assets/img/post3-1.png){: .width-80}
+![alert() 함수 결과]({{ site.baseurl }}/assets/img/post3-1.png){: width="80%"}
 ![alert() 함수 결과]({{ site.baseurl }}/assets/img/post3-2.png){: width="50%"}
 
 ## 2. document.write() 함수
