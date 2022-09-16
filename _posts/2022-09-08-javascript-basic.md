@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[JavaScript] 1. 자바스크립트의 간략한 정보 및 자바스크립트 작성 방법"
+title: "[JavaScript] 1. 자바스크립트의 간략한 정보 및 작성 방법"
 subtitle: "자바스크립트에 대한 대략적인 정보와 자바스크립트의 다양한 작성 방법 알아보기"
 author: SeHyeok Park
 categories : JavaScript
