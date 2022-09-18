@@ -239,7 +239,7 @@ comments : True
   </body>
   ```
 
-## 6. 변환 함수
+## 6. 데이터 타입(자료형) 변환 함수
 - **1. 논리형 변환 함수**
   - Boolean() - 모든 데이터를 논리값으로 판별하는 함수.<br><br>
 
@@ -256,7 +256,7 @@ comments : True
 <body>
   <script>
     // 자동 형변환
-    
+
     console.log(7+", " + typeof(7));                   // 7, number
     console.log(7+null + ", " + typeof(7+null));       // 7, number
     console.log("7"+null + ", " + typeof("7"+null));   // 7null, string
