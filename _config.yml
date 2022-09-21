@@ -27,7 +27,7 @@ theme_settings :
       - skill : HTML5 & CSS
         value : 75  # Percent value
       - skill : Javascript
-        value : 0  # Percent value
+        value : 60  # Percent value
       - skill : Database(ORACLE, MSSQL)
         value : 60  # Percent value
       - skill : JSP & Spring
