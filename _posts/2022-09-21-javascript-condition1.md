@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "[JavaScript] 5. 자바스크립트의 조건문 - if문"
-subtitle: "자바스크립트의 if문 예제 알아보기"
+subtitle: "자바스크립트의 if문 형식 및 예제 알아보기"
 author: SeHyeok Park
 categories : JavaScript
 tags: [JavaScript]
@@ -16,7 +16,7 @@ comments : True
 - **switch ~ case문** 
 - *자바의 문법과 거의 동일*
 
-## 2. if문 문법
+## 2. if문 형식
 - **조건이 1개인 경우**
 
   ```javascript
