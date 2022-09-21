@@ -72,8 +72,8 @@ comments : True
     console.log("시험을 통과하였습니다.");
   }
   ```
-  ***[<span style="color:#707070"><u>> 예문 실행해보기</u></span>](https://jsfiddle.net/)***
-  <br>
+  ***<a href="https://jsfiddle.net/" target="_blank"><span style="color:#707070"><u>> 예문 실행해보기</u></span></a>***
+  <br><br>
 
 - **<mark>예제2 - 조건이 2개인 경우</mark>**
   - **Q:** 점수가 80점 이상일 때 \"합격입니다.\"라는 메시지를 출력하고, 80점 미만일 때 \"불합격입니다.\"라는 메시지를 출력하도록 하시오.
@@ -87,8 +87,8 @@ comments : True
     console.log("불합격입니다.");
   }
   ```
-  ***[<span style="color:#707070"><u>> 예문 실행해보기</u></span>](https://jsfiddle.net/)***
-  <br>
+  ***<a href="https://jsfiddle.net/" target="_blank"><span style="color:#707070"><u>> 예문 실행해보기</u></span></a>***
+  <br><br>
 
 - **<mark>예제3 - 조건이 3개인 경우</mark>**
   - **Q:** 점수가 90점이상일 때는 \"최우수\", 80점 이상일 때는 \"우수\", 80점미만일 때는 \"보통\"이라는 메시지를 출력하시오.
@@ -104,8 +104,8 @@ comments : True
     console.log("보통");
   }
   ```
-  ***[<span style="color:#707070"><u>> 예문 실행해보기</u></span>](https://jsfiddle.net/)***
-  <br>
+  ***<a href="https://jsfiddle.net/" target="_blank"><span style="color:#707070"><u>> 예문 실행해보기</u></span></a>***
+  <br><br>
 
 - **<mark>예제4 - 조건이 4개 이상인 경우</mark>**
   - **Q:** 점수가 90점이상일 때 \"A학점\", 80점이상일 때 \"B학점\", 70점이상일 때 \"C학점\", 60점이상일 때, \"D학점\", 60점 미만일 때 \"F학점\"을 출력하시오.
@@ -125,6 +125,6 @@ comments : True
     console.log("F학점");
   }
   ```
-  ***[<span style="color:#707070"><u>> 예문 실행해보기</u></span>](https://jsfiddle.net/)***
-  <br>
+  ***<a href="https://jsfiddle.net/" target="_blank"><span style="color:#707070"><u>> 예문 실행해보기</u></span></a>***
+  <br><br>
 
