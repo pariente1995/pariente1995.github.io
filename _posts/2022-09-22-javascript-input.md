@@ -15,7 +15,7 @@ comments : True
 - 대화상자를 통해서 사용자가 원하는 값을 입력하는 함수.
 
   ```javascript
-  let age = prompt("당신의 나이를 입력하시오.");
+  let age = Number(prompt("당신의 나이를 입력하시오."));
 
   if(age >= 19) {
     console.log("당신은 투표권이 있는 나이입니다.");
