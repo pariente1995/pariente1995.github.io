@@ -30,7 +30,7 @@ comments : True
 - 대화상자를 통해서 확인일 때는 true, 취소일 때는 false의 결과를 입력하는 함수.
 
   ```javascript
-  let answer = confirm("당신은 나이는 19세이상인가요?");
+  let answer = confirm("당신의 나이는 19세이상인가요?");
 
   if(answer) {
     console.log("당신은 투표권이 있는 나이입니다.");
