@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[JavaScript] 7. 자바스크립트의 입력 함수
+title: "[JavaScript] 7. 자바스크립트의 입력 함수"
 subtitle: "prompt(), confirm() 입력 함수 알아보기"
 author: SeHyeok Park
 categories : JavaScript
