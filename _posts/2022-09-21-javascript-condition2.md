@@ -27,7 +27,7 @@ switch(조건) {
     break;
 }
 ```
-<br><br>
+<br>
 
 ## 2. switch ~ case문의 간단한 활용 예제
 - **<mark>예제1</mark>**

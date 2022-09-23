@@ -84,7 +84,7 @@ comments : True
     </script>
   </body>
   ```
-<br><br>
+<br>
 
 ## 4. 변수의 데이터 타입(자료형)
 - **number :** 숫자형, 정수와 실수를 모두 포함.
@@ -120,7 +120,7 @@ comments : True
   </script>
 </body>
 ```
-<br><br>
+<br>
 
 ## 5. 데이터 타입(자료형) 예제
 - **number(숫자형)**
@@ -242,7 +242,7 @@ comments : True
     </script>
   </body>
   ```
-<br><br>
+<br>
 
 ## 6. 데이터 타입(자료형) 변환 함수
 - **1. 논리형 변환 함수**

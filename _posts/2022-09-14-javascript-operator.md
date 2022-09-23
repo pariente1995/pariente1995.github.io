@@ -53,6 +53,7 @@ comments : True
   </script>
 </body>
 ```
+<br>
 
 ## 2. 증감 연산자
 - ++, \--
@@ -72,6 +73,7 @@ comments : True
   </script>
 </body>
 ```
+<br>
 
 ## 3. 비교 연산자
 - \>, >=, <, <=, ==, !=
@@ -104,6 +106,7 @@ comments : True
   </script>
 </body>
 ```
+<br>
 
 ## 4. 논리 연산자: &&(논리 AND), ||(논리 OR), !(논리 NOT) 
 - 논리 AND : 양쪽의 항이 모두 참일 때 참으로 판별함.
@@ -131,6 +134,7 @@ comments : True
   </script>
 </body>
 ```
+<br>
 
 ## 5. 조건 선택 연산자
 - (조건 ? 참 : 거짓)
@@ -147,6 +151,7 @@ comments : True
   </script>
 </body>
 ```
+<br>
 
 ## 6. 대입 연산자, 복합 대입 연산자
 - = : 대입 연산자

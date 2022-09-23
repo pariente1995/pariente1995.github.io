@@ -70,7 +70,7 @@ comments : True
   </script>
 </body>
 ```
-<br><br>
+<br>
 
 #### 2. 외부 자바스크립트 작성 방법
 ***<mark>실무적으로는 자바스크립트 파일을 따로 나누어 관리하는 것이 원칙!</mark>***
@@ -96,7 +96,7 @@ welcome();
   <script src="js_basic01.js"></script>
 </body>
 ```
-<br><br>
+<br>
 
 #### 3. 인라인 자바스크립트 작성 방법
 ***최근에는 지양하는 방법이지만, 오랫동안 많이 써왔던 방법이기에 알아두어야 한다!***
@@ -105,7 +105,7 @@ welcome();
   <button onclick="alert('Welcome to Javascript!!!');">Javascript</button>
 </body>
 ```
-<br><br>
+<br>
 
 #### 4. 내부&인라인 자바스크립트 작성 방법
 ```html
