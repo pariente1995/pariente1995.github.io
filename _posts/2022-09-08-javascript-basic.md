@@ -21,6 +21,7 @@ comments : True
 - 유럽 컴퓨터 제조업자 협회.
 - ECMAScript1~5, ECMAScript6(2015), ECMAScript2020, ECMAScript2022 등의 버전이 있다.
 - ECMAScript를 줄여서 약자로 ES라고 사용.
+<br><br>
 
 ## 2. 자바스크립트 응용 API
 - 프론트엔드 영역에서 프레임워크로 사용하는 API.
@@ -31,6 +32,7 @@ comments : True
 
 **[ 바닐라 스크립트(Vanilla Script) ]**
 - 순수한 자바스크립트만을 개발해 보자는 취지의 자바스크립트.
+<br><br>
 
 ## 3. 자바스크립트 작성 방법
 #### 1. 내부 자바스크립트 작성 방법
@@ -68,6 +70,7 @@ comments : True
   </script>
 </body>
 ```
+<br><br>
 
 #### 2. 외부 자바스크립트 작성 방법
 ***<mark>실무적으로는 자바스크립트 파일을 따로 나누어 관리하는 것이 원칙!</mark>***
@@ -93,6 +96,8 @@ welcome();
   <script src="js_basic01.js"></script>
 </body>
 ```
+<br><br>
+
 #### 3. 인라인 자바스크립트 작성 방법
 ***최근에는 지양하는 방법이지만, 오랫동안 많이 써왔던 방법이기에 알아두어야 한다!***
 ```html
@@ -100,6 +105,7 @@ welcome();
   <button onclick="alert('Welcome to Javascript!!!');">Javascript</button>
 </body>
 ```
+<br><br>
 
 #### 4. 내부&인라인 자바스크립트 작성 방법
 ```html

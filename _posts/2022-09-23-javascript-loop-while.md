@@ -13,6 +13,7 @@ comments : True
 
 ## 1. 자바스크립트 반복문의 종류
 - **while, do-while문, for문**
+<br><br>
 
 ## 2. while문 형식
 
@@ -24,6 +25,7 @@ while(조건) {
   증감값;
 }
 ```
+<br><br>
 
 ## 3. while문의 간단한 활용 예제
 - **<mark>예제1</mark>**
