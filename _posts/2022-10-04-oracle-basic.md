@@ -40,6 +40,7 @@ comments : True
 ## 5. SQL(Structured Query Language, 구조화된 질의 언어)
 - RDBMS에서 사용하는 언어.
 - 표준 SQL + 각 회사에서 추가한 SQL.
+<br><br>
 
 ## 6. SQL 명령의 종류
 **(1) DCL(Data Control Language, 데이터 제어어)**
@@ -61,7 +62,7 @@ comments : True
 **(4) TCL(Transaction Control Language, 트랜잭션 제어어)**
 - 트랜잭션을 제어하는 기능.
 - **<mark>명령어:</mark> commit, rollback, savepoint ...**
-<br>
+<br><br>
 
 ## 7. Oracle 계정 생성 및 권한 부여
 - **Oracle Version**
