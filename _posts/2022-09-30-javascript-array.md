@@ -20,7 +20,7 @@ comments : True
   ```javascript
   let a1 = []; // 빈 배열
   let a2 = [10, 20, 30, 40, 50]; // 정수 5개를 갖는 배열
-  let a3 = ["자료구조", 84, "웹프로그래밍", 92, "알고리즘", 76] // 문자열과 정수를 모두 저장한 배열
+  let a3 = ["자료구조", 84, "웹프로그래밍", 92, "알고리즘", 76]; // 문자열과 정수를 모두 저장한 배열
 
   console.log(a1);
   console.log(typeof a1); // object
@@ -93,7 +93,7 @@ comments : True
   console.log(seasons[2]); // Autumn
   console.log(seasons[3]); // Winter
   console.log(seasons[4]); // undefined
-  console.log(typeof seasons[4]) // undefined
+  console.log(typeof seasons[4]); // undefined
   ```
   ***<a href="https://jsfiddle.net/" target="_blank"><span style="color:#707070"><u>> 예문 실행해보기</u></span></a>***
   <br><br>
