@@ -63,7 +63,7 @@ comments : True
 - **<mark>명령어:</mark> commit, rollback, savepoint ...**
 <br>
 
-## 7. Oracle 기본 사용법
+## 7. Oracle 계정 생성 및 권한 부여
 - **Oracle Version**
   - Oracle Standard 버전: 보통 회사에서는 11~18 버전을 많이 사용(유료).
   - Oracle Express 버전: 학생 교육용(무료), 11버전과 18버전 2개의 종류만 지원.
@@ -77,7 +77,7 @@ comments : True
   - 사용자 계정: ex) aws01
   <br>
 
-- **계정 생성 및 권한 부여(cmd에서 실행)**
+- **계정 생성 및 권한 부여 방법(cmd에서 실행)**
   ```sql
   sqlplus system/[비밀번호]; -- 관리자 계정 로그인, 오라클 설치 시 입력한 비밀번호
   ex) sqlplus system/1234;
