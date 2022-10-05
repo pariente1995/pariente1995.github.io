@@ -13,27 +13,27 @@ Oracle 기본적인 데이터 타입(Data Type) 및 연산자 알아보기
 
 ## 1. 데이터 타입(Data Type)
 - 문자열, 숫자(정수, 실수), 날짜 등등...
-<br>
+<br><br>
 
 - **문자열**
   - 홑따옴표(\' \')로 묶음.
   - **CHAR:** 고정 문자열.
   - **VARCHAR2:** 가변 문자열.
-<br>
+<br><br>
 
 - **숫자**
   - **NUMBER(크기):** 정수 
     - ex) NUMBER(5)
   - **NUMBER(크기, 소수점자리수):** 실수 
     - ex) NUMBER(7, 2)
-<br>
+<br><br>
 
 - **날짜**
   - 홑따옴표(\' \')로 묶음.
   - 년월일을 yyyy(yy)/mm/dd, yyyy(yy)-mm-dd의 형태로 설정.*(yy로만 쓸 경우, 1900년대로 인식한다.)*
   - **DATE:** 날짜.
   - **TIMESTAMP:** 날짜와 시간.
-<br>
+<br><br>
 
 - **대용량의 데이터**
   - **BLOB(Binary Large Object)**
