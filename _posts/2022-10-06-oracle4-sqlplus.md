@@ -61,6 +61,9 @@ ex) @c:\tmp\o1005.sql;
 <br><br>
 <hr>
 
+- **desc 테이블명**
+: 테이블의 구조를 확인할 수 있는 명령어.
+
 - **host**
 : sqlplus 환경에서 oracle의 설정을 유지한 채로 dos 환경으로 나가는 명령어.
 

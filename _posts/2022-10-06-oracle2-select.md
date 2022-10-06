@@ -47,24 +47,26 @@ SELECT 컬럼명을 나열
   - **Q:** 사원 테이블에서 부서번호가 10인 사원 정보를 확인하시오.
   ```sql
   SELECT *
-      FROM employee
+       FROM employee
    WHERE dno = 10;
   ```
   <br><br>
 
 - **<mark>예제2</mark>**
-  - **Q:** 사원 테이블에서 업무를 확인하시오.
+  - **Q:** 사원 테이블에서 중복을 제거하여 업무를 확인하시오.
   ```sql
-  SELECT job 
-      FROM employee;
+  SELECT DISTINCT job 
+       FROM employee;
   ```
+  ***※ DISTINCT 키워드: <u>데이터의 중복을 제거.</u>***
+
   <br><br>
 
 - **<mark>예제3</mark>**
   - **Q:** 사원 테이블에서 부서번호를 사원이름을 기준으로 내림차순하여 확인하시오.
   ```sql
   SELECT dno
-      FROM employee;
+       FROM employee;
    ORDER BY ename DESC;
   ```
   <br><br>
@@ -74,7 +76,7 @@ SELECT 컬럼명을 나열
   다음 필드는 별칭을 사용하시오. (총급여: TOTAL SALARY)
   ```sql
   SELECT eno, ename, salary, commission, salary+commission as "TOTAL SALARY"
-      FROM employee 
+       FROM employee 
    ORDER BY "TOTAL SALARY" DESC;
   ```
 <br><br>
