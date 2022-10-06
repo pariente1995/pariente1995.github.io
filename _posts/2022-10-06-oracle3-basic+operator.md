@@ -69,7 +69,14 @@ Oracle 기본적인 데이터 타입(Data Type) 및 연산자 알아보기
   - ex) SELECT * FROM employee WHERE salary IN (1300, 1500, 1600);
 <br><br>
 
-- **(3) LIKE**
+- **(3) IS**
+  - NULL 혹은 NULL이 아닌 데이터를 조회하고자 할 경우 사용.
+  - **사용법:** 컬럼명 IS (NOT) NULL
+  - ex) SELECT * FROM employee WHERE commission IS NULL;
+  - ex) SELECT * FROM employee WHERE commission IS NOT NULL;
+<br><br>
+
+- **(4) LIKE**
   - 특정 문자를 포함하는 데이터를 조회하고자 할 경우 사용.
   - **사용법:** 컬럼명 LIKE 검색할 값
     - 와일드 카드 - 특별한 의미를 가지는 문자.
