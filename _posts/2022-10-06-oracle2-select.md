@@ -36,7 +36,7 @@ SELECT 구문의 기본 형식 및 예제 알아보기
 ## 2. SELECT 구문 기본 형식
 ```sql
 SELECT 컬럼명을 나열
- &nbsp;FROM 테이블명
+ &nbsp; FROM 테이블명
  WHERE 조건
  ORDER BY 정렬할 컬럼명;
 ```
@@ -47,7 +47,7 @@ SELECT 컬럼명을 나열
   - **Q:** 사원 테이블에서 부서번호가 10인 사원 정보를 확인하시오.
   ```sql
   SELECT * 
-   &nbsp;FROM employee
+                       FROM employee
    WHERE dno = 10;
   ```
   <br><br>
