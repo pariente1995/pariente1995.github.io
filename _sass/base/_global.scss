@@ -105,13 +105,14 @@ a:link, a:visited, a:active, a:hover {
 .display-none{
 	display: none;
 }
-.highlighter-rouge {
-    font-size: 0.9rem;
-    color: $theme-color;
-    background-color: $theme-bright;
-    padding: .1em .5em;
-    border-radius: 3px;
-}
+// 주석처리 :: 2022.10.06 박세혁
+// .highlighter-rouge {
+//     font-size: 0.9rem;
+//     color: $theme-color;
+//     background-color: $theme-bright;
+//     padding: .1em .5em;
+//     border-radius: 3px;
+// }
 .tag {
 	background-color: $theme-dark;
 	display: inline-block;

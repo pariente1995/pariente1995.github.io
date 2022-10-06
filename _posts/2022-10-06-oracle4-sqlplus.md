@@ -117,3 +117,6 @@ ex) et pagesize 20; // 페이지사이즈를 20으로 변경.
     ex) column salary format $9,999,999;<br>
     ex) column commission format L0,000,000;<br>
     ![column format 예제]({{ site.baseurl }}/assets/img/oracle-post3-5.png){: width="80%"}
+  <br>
+- **column 컬럼명 clear;**
+  - 컬럼 형식을 원래대로 초기화.

@@ -5,7 +5,8 @@
 @import 'base/variable';
 @import 'base/global';
 @import 'base/utility';
-@import 'base/highlight';
+// 주석처리 :: 2022.10.06 박세혁
+//@import 'base/highlight';
 
 // Layout 
 @import 'layouts/home';
