@@ -56,7 +56,7 @@ SELECT 컬럼명을 나열
   - **Q:** 사원 테이블에서 업무를 확인하시오.
   ```sql
   SELECT job 
-  FROM employee;
+    FROM employee;
   ```
   <br><br>
 
