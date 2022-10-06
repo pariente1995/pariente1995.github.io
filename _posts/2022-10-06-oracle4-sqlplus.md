@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Oracle] 3. Oracle SQL PLUS 명령어"
+title: "[Oracle] 4. Oracle SQL PLUS 명령어"
 subtitle: "Oracle SQL PLUS 명령어 알아보기"
 author: SeHyeok Park
 categories : Database, DB, Oracle

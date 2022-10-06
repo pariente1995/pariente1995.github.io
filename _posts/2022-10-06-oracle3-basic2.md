@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Oracle] 2. Oracle 기본적인 데이터 타입(Data Type) 및 연산자"
+title: "[Oracle] 3. Oracle 기본적인 데이터 타입(Data Type) 및 연산자"
 subtitle: "Oracle 데이터 타입(Data Type) 및 연산자 알아보기"
 author: SeHyeok Park
 categories : Database, DB, Oracle
