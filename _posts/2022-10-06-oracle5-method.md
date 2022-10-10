@@ -13,7 +13,7 @@ Oracle에서 사용하는 다양한 함수 알아보기
 
 ## 1. Dual 테이블
 - 한행 한컬럼을 가지고 있는 가상 테이블.
-- 간단한 계산 결과를 확인하는 용도로 사용.
+- 간단한 계산 결과를 확인하는 용도로 사용.<br>
 ex) SELECT * FROM DUAL;
 ![DUAL 테이블]({{ site.baseurl }}/assets/img/oracle-post5-1.png){: width="40%"}
 
