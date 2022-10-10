@@ -17,19 +17,19 @@ Oracle의 다양한 SQL PLUS 명령어 알아보기
 
 ## 2. SQL PLUS 명령어 모음
 - **ed(edit)** 
-: 바로 직전에 사용한 SQL문을 임시 버퍼로 불러와서 메모장으로 보여주는 명령어.
+: 바로 직전에 사용한 SQL문을 임시 버퍼로 불러와서 메모장으로 보여주는 명령어.<br>
 ![ed 명령어 예제]({{ site.baseurl }}/assets/img/oracle-post3-1.png){: width="70%"}
 
 - **l(list)**
-: 바로 직전에 사용한 SQL문을 보여주는 명령어.
+: 바로 직전에 사용한 SQL문을 보여주는 명령어.<br>
 ![ed 명령어 예제]({{ site.baseurl }}/assets/img/oracle-post3-2.png){: width="70%"}
 
 - **/**
-: 바로 직전에 사용한 SQL문을 실행하는 명령어.
+: 바로 직전에 사용한 SQL문을 실행하는 명령어.<br>
 ![ed 명령어 예제]({{ site.baseurl }}/assets/img/oracle-post3-3.png){: width="70%"}
 
 - **r(run)**
-: 바로 직전에 사용한 SQL문을 보여주고 실행하는 명령어.
+: 바로 직전에 사용한 SQL문을 보여주고 실행하는 명령어.<br>
 ![ed 명령어 예제]({{ site.baseurl }}/assets/img/oracle-post3-4.png){: width="70%"}
 <br><br>
 

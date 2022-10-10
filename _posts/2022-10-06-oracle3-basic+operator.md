@@ -82,5 +82,5 @@ Oracle 기본적인 데이터 타입(Data Type) 및 연산자 알아보기
     - 와일드 카드 - 특별한 의미를 가지는 문자.
       - %(퍼센트): 없거나, 하나 이상의 어떠한 문자가 와도 상관이 없음.
       - _(언더바): 하나의 문자가 어떤 값이 와도 상관이 없음.
-  - ex) SELECT * FROM employee WHERE ename LIKE 'S%';
+  - ex) SELECT * FROM employee WHERE ename LIKE \'S%\';
 <br><br>
