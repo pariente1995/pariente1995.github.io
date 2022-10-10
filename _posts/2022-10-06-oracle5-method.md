@@ -15,23 +15,23 @@ Oracle에서 사용하는 다양한 함수 알아보기
 - 한행 한컬럼을 가지고 있는 가상 테이블.
 - 간단한 계산 결과를 확인하는 용도로 사용.
 ex) SELECT * FROM DUAL;
-![DUAL 테이블]({{ site.baseurl }}/assets/img/oracle-post5-1.png){: width="70%"}
+![DUAL 테이블]({{ site.baseurl }}/assets/img/oracle-post5-1.png){: width="60%"}
 
 ## 2. Oracle 함수 모음
 ##### (1) 문자열을 처리하는 함수
 - **UPPER()**
   - 문자열을 대문자로 변환하는 함수.<br>
-  ex) SELECT UPPER('oracle') FROM DUAL;
+  ex) SELECT UPPER('oracle') FROM DUAL;<br>
   <br>
 
 - **LOWER()**
   - 문자열을 소문자로 변환하는 함수.<br>
-  ex) SELECT LOWER('ORACLE') FROM DUAL;
+  ex) SELECT LOWER('ORACLE') FROM DUAL;<br>
   <br>
 
 - **INITCAP()**
   - 문자열의 첫 글자만 대문자, 나머지 글자는 소문자로 변환하는 함수.<br>
-  ex) SELECT INITCAP('oracle') FROM DUAL;
+  ex) SELECT INITCAP('oracle') FROM DUAL;<br>
   <br>
 
 - **LENGTH()**
@@ -52,7 +52,7 @@ ex) SELECT * FROM DUAL;
 - **CONCAT()**
   - 문자열 2개를 하나로 합치는 함수.<br>
   ex) SELECT CONCAT('DCL', 'DDL') FROM DUAL;<br>
-  <mark>**cf) < ||: 문자열 연결 연산자 >**</mark><br>
+  <mark>**cf) ||: 문자열 연결 연산자**</mark><br>
   ex) SELECT '오라클 ' || '공부를' || ' 해보아요.' FROM DUAL;<br>
   <br>
 
@@ -69,15 +69,15 @@ ex) SELECT * FROM DUAL;
 
 - **INSTR()**
   - 문자열에서 특정문자의 위치를 찾는 함수.<br>
-  1. INSTR(문자열, 찾는 문자): 문자열에서 찾는 문자가 나오는 첫번째 위치.<br>
-  ex) SELECT INSTR('HELLO ORACLE', 'E') FROM DUAL;<br>
+  - **INSTR(문자열, 찾는 문자):** 문자열에서 찾는 문자가 나오는 첫번째 위치.<br>
+    ex) SELECT INSTR('HELLO ORACLE', 'E') FROM DUAL;<br><br>
   
-  2. INSTR(문자열, 찾는 문자, 찾는 위치): 문자열에서 찾는 문자를, 찾는 위치부터 시작하여 나오는 위치.<br>
-  ex) SELECT INSTR('HELLO ORACLE', 'E', 3) FROM DUAL;<br>
+  - **INSTR(문자열, 찾는 문자, 찾는 위치):** 문자열에서 찾는 문자를, 찾는 위치부터 시작하여 나오는 위치.<br>
+    ex) SELECT INSTR('HELLO ORACLE', 'E', 3) FROM DUAL;<br><br>
 
-  3. INSTR(문자열, 찾는 문자, 찾는 위치, 몇번째): 문자열에서 찾는 문자를 찾는 위치부터 시작하여 몇번째로 나오는 위치.<br>
-  ex) SELECT INSTR('HELLO ORACLE', 'E', 1, 2) FROM DUAL;<br>
-  <br>
+  - **INSTR(문자열, 찾는 문자, 찾는 위치, 몇번째):** 문자열에서 찾는 문자를 찾는 위치부터 시작하여 몇번째로 나오는 위치.<br>
+    ex) SELECT INSTR('HELLO ORACLE', 'E', 1, 2) FROM DUAL;
+  <br><br>
 
 - **LPAD(문자열, 전체크기, 채울문자)**
   - 문자열의 왼쪽에 패딩을, 지정한 문자로 채우는 함수.<br>
@@ -91,36 +91,36 @@ ex) SELECT * FROM DUAL;
 
 ##### (2) 숫자를 처리하는 함수
 - **ROUND(): 반올림 함수.**
-  1. 반올림하여 1의 자리까지 표현<br>
+  - 반올림하여 1의 자리까지 표현<br>
   ex) SELECT ROUND(98.7654) FROM DUAL;<br>
 
-  2. 반올림하여 소수점 첫째자리까지 표현<br>
+  - 반올림하여 소수점 첫째자리까지 표현<br>
   ex) SELECT ROUND(98.7654, 1) FROM DUAL;<br>
 
-  3. 반올림하여 소수점 둘째자리까지 표현<br>
+  - 반올림하여 소수점 둘째자리까지 표현<br>
   ex) SELECT ROUND(98.7654, 2) FROM DUAL;<br>
 
-  4. 반올림하여 10의 자리까지 표현<br>
+  - 반올림하여 10의 자리까지 표현<br>
   ex) SELECT ROUND(34567, -1) FROM DUAL;<br>
 
-  5. 반올림하여 100의 자리까지 표현<br>
+  - 반올림하여 100의 자리까지 표현<br>
   ex) SELECT ROUND(34567, -2) FROM DUAL;<br>
   <br>
 
 - **TRUNC(): 버림 함수.**
-  1. 소수점 이하 버림<br>
+  - 소수점 이하 버림<br>
   ex) SELECT TRUNC(98.7654) FROM DUAL;<br>
 
-  2. 소수점 첫째자리가지 표현, 나머지는 버림<br>
+  - 소수점 첫째자리가지 표현, 나머지는 버림<br>
   ex) SELECT TRUNC(98.7654, 1) FROM DUAL;<br>
 
-  3. 소수점 둘째자리가지 표현, 나머지는 버림<br>
+  - 소수점 둘째자리가지 표현, 나머지는 버림<br>
   ex) SELECT TRUNC(98.7654, 2) FROM DUAL;<br>
 
-  4. 10의 자리까지 표현, 나머지는 버림<br>
+  - 10의 자리까지 표현, 나머지는 버림<br>
   ex) SELECT TRUNC(34567, -1) FROM DUAL;<br>
 
-  5. 100의 자리까지 표현, 나머지는 버림<br>
+  - 100의 자리까지 표현, 나머지는 버림<br>
   ex) SELECT TRUNC(34567, -2) FROM DUAL;<br>
   <br>
 
@@ -182,7 +182,7 @@ ex) SELECT MOD(10, 4) FROM DUAL;<br>
     ex) SELECT TO_CHAR(SYSDATE, 'pm hh:mi:ss') FROM DUAL;<br>
     ex) SELECT TO_CHAR(SYSDATE, 'pm hh24:mi:ss') FROM DUAL;<br>
     ex) SELECT TO_CHAR(SYSDATE, 'yyyy-mm-dd day pm hh24:mi:ss') FROM DUAL;<br>
-<br><br>
+<br>
 
 - <mark>**숫자와 관련된 서식**</mark>
   - 0 : 무효한 자리의 값을 0으로 표현
@@ -204,17 +204,18 @@ ex) SELECT MOD(10, 4) FROM DUAL;<br>
   ex) SELECT TO_CHAR(4567.76543, '0,000,0000') FROM DUAL;<br>
   ex) SELECT TO_CHAR(4567.76543, '0,000,00000') FROM DUAL;<br>
   ex) SELECT TO_CHAR(4567.76543, '0,000,00000000') FROM DUAL;<br>
-  <br><br>
+<br>
 
 ##### (5) NULL 데이터 관련 함수
 - NVL(컬럼명, 값1): 컬럼에 해당하는 값이 NULL일 때, 값1을 사용하는 함수.<br><br>
 - NVL2(컬럼명, 값1, 값2): 컬럼에 해당하는 값이 NULL이 아닐 때 값1, NULL일 때 값2를 사용하는 함수.<br><br>
 - NULLIF(값1, 값2): 두 값이 같다면 NULL, 같지 않으면 첫번째 값을 사용하는 함수.<br><br>
 - COALESCE(컬럼명1, 컬럼명2, 컬럼명3 ... 기본값)
-  - 컬럼1이 NULL이 아니면 컬럼1을 사용하고, 
-    컬럼1이 NULL이고, 컬럼2가 NULL이 아니면 컬럼2를 사용하고, 
-    컬럼2가 NULL이고, 컬럼3이 NULL이 아니면 컬럼3을 사용하고,
+  - 컬럼1이 NULL이 아니면 컬럼1을 사용하고,<br>
+    컬럼1이 NULL이고, 컬럼2가 NULL이 아니면 컬럼2를 사용하고,<br>
+    컬럼2가 NULL이고, 컬럼3이 NULL이 아니면 컬럼3을 사용하고,<br>
     컬럼3이 NULL이면 기본값을 사용.
+<br><br>
 
 ##### (6) 기타 함수
 - **DECODE(컬럼 또는 수식, 조건1, 결과1, 조건2, 결과2, 조건3, 결과3 ... 기본값)**
@@ -223,7 +224,7 @@ ex) SELECT MOD(10, 4) FROM DUAL;<br>
   - **Q:** 부서명은 10이면 ACCOUNTING, 20이면 RESEARCH, 30이면 SALES, 40이면 OPERATIONS, 그 나머지는 DEFAULT로 출력하시오.
     ```sql
     SELECT ename, dno, 
-          decode(dno, 10, 'ACCOUNTING', 20, 'RESEARCH', 30, 'SALES', 40, 'OPERATIONS', 'DEFAULT') AS DNAME 
+    decode(dno, 10, 'ACCOUNTING', 20, 'RESEARCH', 30, 'SALES', 40, 'OPERATIONS', 'DEFAULT') AS DNAME 
     FROM employee;
     ```
     <br><br>
