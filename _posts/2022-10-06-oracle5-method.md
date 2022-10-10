@@ -52,7 +52,7 @@ ex) SELECT * FROM DUAL;
 - **CONCAT()**
   - 문자열 2개를 하나로 합치는 함수.<br>
   ex) SELECT CONCAT('DCL', 'DDL') FROM DUAL;<br>
-  <mark>**cf) ||: 문자열 연결 연산자**</mark><br>
+  **<mark>cf) ||: 문자열 연결 연산자</mark>**<br>
   ex) SELECT '오라클 ' || '공부를' || ' 해보아요.' FROM DUAL;<br>
   <br>
 
@@ -124,7 +124,7 @@ ex) SELECT * FROM DUAL;
   ex) SELECT TRUNC(34567, -2) FROM DUAL;<br>
   <br>
 
-- **MOD(나누어지는 수, 나누는 수): 나머지를 계산하는 함수.**
+- **MOD(나누어지는 수, 나누는 수): 나머지를 계산하는 함수.**<br>
 ex) SELECT MOD(10, 3) FROM DUAL;<br>
 ex) SELECT MOD(10, 4) FROM DUAL;<br>
 <br><br>
@@ -169,7 +169,7 @@ ex) SELECT MOD(10, 4) FROM DUAL;<br>
   - 날짜와 숫자를 다양한 형식으로 출력할 때 사용함.
   <br><br>
 
-- <mark>**날짜와 시간과 관련된 서식**</mark>
+- **<mark>날짜와 시간과 관련된 서식</mark>**
   - /: 년월일을 /로 구분하여 출력
   - -: 년월일을 -로 구분하여 출력
   - yyyy: 년도 4자리, mm: 월 2자리, dd: 일 2자리, day: 긴 요일명, dy: 짧은 요일명
@@ -184,7 +184,7 @@ ex) SELECT MOD(10, 4) FROM DUAL;<br>
     ex) SELECT TO_CHAR(SYSDATE, 'yyyy-mm-dd day pm hh24:mi:ss') FROM DUAL;<br>
 <br>
 
-- <mark>**숫자와 관련된 서식**</mark>
+- **<mark>숫자와 관련된 서식</mark>**
   - 0 : 무효한 자리의 값을 0으로 표현
   - 9 : 무효한 자리의 값은 생략
   - , : 천단위 구분 기호
@@ -207,10 +207,10 @@ ex) SELECT MOD(10, 4) FROM DUAL;<br>
 <br>
 
 ##### (5) NULL 데이터 관련 함수
-- NVL(컬럼명, 값1): 컬럼에 해당하는 값이 NULL일 때, 값1을 사용하는 함수.<br><br>
-- NVL2(컬럼명, 값1, 값2): 컬럼에 해당하는 값이 NULL이 아닐 때 값1, NULL일 때 값2를 사용하는 함수.<br><br>
-- NULLIF(값1, 값2): 두 값이 같다면 NULL, 같지 않으면 첫번째 값을 사용하는 함수.<br><br>
-- COALESCE(컬럼명1, 컬럼명2, 컬럼명3 ... 기본값)
+- **NVL(컬럼명, 값1):** 컬럼에 해당하는 값이 NULL일 때, 값1을 사용하는 함수.<br><br>
+- **NVL2(컬럼명, 값1, 값2):** 컬럼에 해당하는 값이 NULL이 아닐 때 값1, NULL일 때 값2를 사용하는 함수.<br><br>
+- **NULLIF(값1, 값2):** 두 값이 같다면 NULL, 같지 않으면 첫번째 값을 사용하는 함수.<br><br>
+- **COALESCE(컬럼명1, 컬럼명2, 컬럼명3 ... 기본값)**
   - 컬럼1이 NULL이 아니면 컬럼1을 사용하고,<br>
     컬럼1이 NULL이고, 컬럼2가 NULL이 아니면 컬럼2를 사용하고,<br>
     컬럼2가 NULL이고, 컬럼3이 NULL이 아니면 컬럼3을 사용하고,<br>
