@@ -59,7 +59,6 @@ SELECT 컬럼명을 나열
         FROM employee;
   ```
   ***※ DISTINCT 키워드: <u>데이터의 중복을 제거.</u>***
-
   <br><br>
 
 - **<mark>예제3</mark>**
