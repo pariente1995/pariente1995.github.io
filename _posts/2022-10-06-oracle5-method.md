@@ -127,6 +127,31 @@ ex) SELECT * FROM DUAL;<br>
 - **MOD(나누어지는 수, 나누는 수): 나머지를 계산하는 함수.**<br>
 ex) SELECT MOD(10, 3) FROM DUAL;<br>
 ex) SELECT MOD(10, 4) FROM DUAL;<br>
+<br>
+
+- **CEIL(): 소수점에서 올림하는 함수.**<br>
+ex) SELECT CEIL(56.56) FROM DUAL;<br>
+<br>
+
+- **FLOOR(): 소수점에서 내림하는 함수.**<br>
+ex) SELECT FLOOR(56.56) FROM DUAL;<br>
+<br>
+
+- **ABS(): 절대값을 구하는 함수.**<br>
+ex) SELECT ABS(10), ABS(-10) FROM DUAL;<br>
+<br>
+
+- **POWER(): 승수를 구하는 함수.**<br>
+ex) SELECT POWER(2, 3) FROM DUAL;<br>
+ex) SELECT POWER(2.5, 3) FROM DUAL;<br>
+<br>
+
+- **GREATEST(): 절대값을 구하는 함수.**<br>
+ex) SELECT GREATEST(10, 20, 30) FROM DUAL;<br>
+<br>
+
+- **LEAST(): 절대값을 구하는 함수.**<br>
+ex) SELECT LEAST(10, 20, 30) FROM DUAL;<br>
 <br><br>
 
 ##### (3) 날짜를 처리하는 함수
