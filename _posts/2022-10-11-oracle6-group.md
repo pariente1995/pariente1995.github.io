@@ -44,10 +44,11 @@ SELECT 구문 중, GROUP BY & HAVING 절 알아보기
   <br><br>
 
 ## 2. 그룹 함수 관련 예제
+
 ### <span style="color:cornflowerblue">예제1</span>
-##### Q: 사원 테이블에서 부서별 급여의 평균을 평균급여가 높은순으로 구하시오.
-##### - 평균급여는 별칭을 사용하시오. (AVG_SALARY)
-##### - 평균급여는 소수점 둘째자리까지 반올림하여 표현하시오.
+###### Q: 사원 테이블에서 부서별 급여의 평균을 평균급여가 높은순으로 구하시오.
+###### - 평균급여는 별칭을 사용하시오. (AVG_SALARY)
+###### - 평균급여는 소수점 둘째자리까지 반올림하여 표현하시오.
 ```sql
 SELECT dno, ROUND(AVG(salary), 2) AS "AVG_SALARY"
 FROM employee
@@ -57,9 +58,9 @@ ORDER BY dno DESC;
 <br><br>
 
 ### <span style="color:cornflowerblue">예제2</span>
-##### Q: 사원 테이블에서 급여의 합계를, 각 부서 안에서 업무별로 사원수와 함께 출력하시오.
-##### - 급여의 합계, 사원수는 별칭을 사용하시오. (SUM, COUNT)
-##### - 부서번호를 기준으로 오름차순으로 정렬하고, 부서번호가 같다면 업무를 기준으로 오름차순하여 정렬하시오.
+###### Q: 사원 테이블에서 급여의 합계를, 각 부서 안에서 업무별로 사원수와 함께 출력하시오.
+###### - 급여의 합계, 사원수는 별칭을 사용하시오. (SUM, COUNT)
+###### - 부서번호를 기준으로 오름차순으로 정렬하고, 부서번호가 같다면 업무를 기준으로 오름차순하여 정렬하시오.
 ```sql
 SELECT dno, job, SUM(salary) AS SUM, COUNT(*) AS COUNT
 FROM employee
@@ -73,8 +74,8 @@ ORDER BY dno, job;
 <br>
 
 ### <span style="color:cornflowerblue">예제3</span>
-##### Q: 부서별 급여총액이 10000이상인 부서의 부서번호, 사원수, 급여총액을 출력하시오.
-##### - 사원수, 급여총액은 별칭을 사용하시오. (COUNT, SUM)
+###### Q: 부서별 급여총액이 10000이상인 부서의 부서번호, 사원수, 급여총액을 출력하시오.
+###### - 사원수, 급여총액은 별칭을 사용하시오. (COUNT, SUM)
 ```sql
 SELECT dno, COUNT(*) AS COUNT, SUM(salary) AS SUM
 FROM employee
@@ -84,9 +85,9 @@ HAVING SUM(salary) >= 10000;
 <br><br>
 
 ### <span style="color:cornflowerblue">예제4</span>
-##### Q: 급여총액이 5000을 넘는 업무에 대해서 업무와 급여총액을 출력하되, 업무가 'MANAGER'인 사원은 제외하여 출력하시오.
-##### - 급여총액은 별칭을 사용하시오. (SUM)
-##### - 급여총액을 기준으로 내림차순하여 정렬하시오.
+###### Q: 급여총액이 5000을 넘는 업무에 대해서 업무와 급여총액을 출력하되, 업무가 'MANAGER'인 사원은 제외하여 출력하시오.
+###### - 급여총액은 별칭을 사용하시오. (SUM)
+###### - 급여총액을 기준으로 내림차순하여 정렬하시오.
 ```sql
 SELECT job, SUM(salary) AS SUM
 FROM employee
