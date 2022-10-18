@@ -70,7 +70,7 @@ ORDER BY dno, job;
 <br><br>
 
 #### <span style="color:cornflowerblue">★ HAVING</span>
-#### - 그룹에 대한 조건을 지정하여 그룹의 결과를 제한하여 출력.
+##### - 그룹에 대한 조건을 지정하여 그룹의 결과를 제한하여 출력.
 <br>
 
 ### <span style="color:cornflowerblue">예제3</span>
