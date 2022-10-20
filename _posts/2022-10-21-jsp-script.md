@@ -1,0 +1,63 @@
+---
+layout: post
+title: "[JSP] 2. JSP 스크립트 요소"
+subtitle: "JSP 스크립트 요소 알아보기"
+author: SeHyeok Park
+categories : JSP
+tags: [JSP]
+comments : True
+---
+<div id='preview' class='display-none'>
+JSP 스크립트 3가지 요소 알아보기
+</div>
+
+## 1. JSP 스크립트 요소
+#### (1) Declaration, 선언문 -> 꼭 필요할 때만 사용.
+\- 전역변수 선언, 전역 함수 선언 
+\- <b><%! %></b>
+
+#### (2) Scriptlet, 스크립틀릿 -> 많이 사용.
+\- 일반적인 프로그래밍 문법
+\- <b><% %></b>
+
+#### (3) Expression, 표현식 -> 많이 사용.
+\- 값(변수, 함수호출)
+\- <b><%= %></b>
+<br><br>
+
+## 2. JSP 스크립트 요소 예제
+### <span style="color:cornflowerblue">예제1</span>
+```
+<body>
+	<h1>JSP 스크립트 요소1</h1>
+	<%!
+	// 선언문 안 - 전역 변수
+	String str1 = "global variable";
+	%>
+	
+	<%
+	// 스크립틀릿 안 - 지역 변수
+	String str2 = "local variable";
+	%>
+	
+	전역변수 str1: <%=str1 %><br>
+	지역변수 str2: <%=str2 %><br>
+</body>
+```
+<br>
+
+### <span style="color:cornflowerblue">예제2</span>
+```
+<body>
+	<h1>JSP 스크립트 요소 2</h1>
+	<%
+	// 스크립틀릿 안에서는 자바의 문법을 자유롭게 사용 가능함.
+	// 문제) 배열에 해당하는 난수를 생성하여 표현식을 통해 출력하시오.
+	String[] subjects = {"HTML5", "CSS3", "JAVA", "ORACLE", "JSP"};
+	
+	int n = (int)(Math.random()*5);
+	%>
+	
+	나는 <%=subjects[n] %> 과목을 좋아합니다.<br>
+</body>
+```
