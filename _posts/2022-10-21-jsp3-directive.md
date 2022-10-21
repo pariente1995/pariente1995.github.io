@@ -21,7 +21,7 @@ JSP Directive(디렉티브) 알아보기
 <br>
 
 #### (1) page directive
-- info: 페이지의 설명 -> getServletInfo() 메소드로 정보를 리턴
+- info: 페이지의 설명 -> <b>getServletInfo()</b> 메소드로 정보를 리턴
 - language: JSP 페이지에서 사용하는 언어, 기본값: java
 - contentType: 문서의 타입, 기본값: "text/html; charset=UTF-8"
 - pageEncoding: 해당 페이지의 문자 인코딩, 기본값: "UTF-8"
