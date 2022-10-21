@@ -68,7 +68,7 @@ JSP Directive(디렉티브) 알아보기
 ```
 
 #### <span style="color:cornflowerblue">실행 결과</span>
-![디렉티브 실행 결과 1]({{ site.baseurl }}/assets/img/jsp-post1-1.png){: width="60%"}
+![디렉티브 실행 결과 1]({{ site.baseurl }}/assets/img/jsp-result1.png){: width="60%"}
 <br>
 
 ### <span style="color:cornflowerblue">예제2</span>
@@ -136,4 +136,4 @@ JSP Directive(디렉티브) 알아보기
 ```
 
 #### <span style="color:cornflowerblue">실행 결과</span>
-![디렉티브 실행 결과 2]({{ site.baseurl }}/assets/img/jsp-post1-2.png){: width="60%"}
+![디렉티브 실행 결과 2]({{ site.baseurl }}/assets/img/jsp-result2.png){: width="60%"}
