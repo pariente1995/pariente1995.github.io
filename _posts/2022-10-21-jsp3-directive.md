@@ -69,3 +69,71 @@ JSP Directive(디렉티브) 알아보기
 
 #### <span style="color:cornflowerblue">실행 결과</span>
 ![디렉티브 실행 결과 1]({{ site.baseurl }}/assets/img/jsp-post1-1.png){: width="60%"}
+<br>
+
+### <span style="color:cornflowerblue">예제2</span>
+`directive02_top.jsp 파일`
+
+```
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.sql.Timestamp"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>directive_top</title>
+</head>
+<body>
+	<h3>Top Page</h3>
+	<%
+	Timestamp now = new Timestamp(System.currentTimeMillis());
+	%>
+	<%=now %>
+</body>
+</html>
+```
+<br>
+
+`directive02_bottom.jsp 파일`
+```
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>directive_bottom</title>
+</head>
+<body>
+	<h3>Bottom Page</h3>
+	<%-- 같은 페이지에 있어 실행은 되지만, 에러 표시로는 나타남. --%>
+	<%//=name %>
+</body>
+</html>
+```
+<br>
+
+`directive02.jsp 파일`
+```
+...(중략)
+
+<body>
+	<h1>디렉티브 연습 2 (include)</h1>
+	<br>
+	
+	<%
+	String name = "우영우";
+	%>
+	
+	<%@ include file="directive02_top.jsp" %>
+	<hr>
+	<h2>Main Page</h2>
+	<p>메인 페이지입니다.</p>
+	<hr>
+	<%@ include file="directive02_bottom.jsp" %>
+</body>
+```
+
+#### <span style="color:cornflowerblue">실행 결과</span>
+![디렉티브 실행 결과 2]({{ site.baseurl }}/assets/img/jsp-post1-2.png){: width="60%"}
