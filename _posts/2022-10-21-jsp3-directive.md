@@ -108,7 +108,7 @@ JSP Directive(디렉티브) 알아보기
 <body>
 	<h3>Bottom Page</h3>
 	<%-- 같은 페이지에 있어 실행은 되지만, 에러 표시로는 나타남. --%>
-	<%//=name %>
+	<%=name %>
 </body>
 </html>
 ```
