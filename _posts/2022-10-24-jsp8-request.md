@@ -184,4 +184,4 @@ JSP Request 알아보기
 ```
 
 #### <span style="color:cornflowerblue">실행 결과</span>
-![실행 결과 3]({{ site.baseurl }}/assets/img/jsp-result8-3.png){: width="60%"}
+![실행 결과 3]({{ site.baseurl }}/assets/img/jsp-result8-3.png){: width="100%"}
