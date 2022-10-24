@@ -15,7 +15,8 @@ JSP Request 알아보기
 ##### &emsp; 1. setCharacterEncoding(): 인코딩을 변경하는 메소드
 ##### &emsp; 2. getParameter(): 파라미터로 넘어오는 값 1개를 얻는 메소드
 &emsp;&emsp; - input, select(단수) 사용 시
-##### &emsp; 3. getParameterValues(): 파라미터로 넘어오는 여러 개의 값을 얻는 메소드, 문자열 배열 사용
+##### &emsp; 3. getParameterValues(): 파라미터로 넘어오는 여러 개의 값을 얻는 메소드
+&emsp;&emsp; - 문자열 배열 사용
 &emsp;&emsp; - input 중에서 checkbox, select(복수) 사용 시
 ##### &emsp; 4. getProtocol(): 사용중인 프로토콜을 알려주는 메소드 
 ##### &emsp; 5. getSeverName(): 서버의 도메인 이름을 알려주는 메소드
