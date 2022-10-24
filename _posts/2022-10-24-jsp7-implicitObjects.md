@@ -26,7 +26,7 @@ JSP 내장 객체(Implicit Objects) 및 영역 객체 알아보기
 ##### &emsp; 7. page 객체: JSP 페이지를 구현하는 자바 클래스의 객체, 사용하지 않음.
 ##### &emsp; 8. config 객체: JSP 페이지의 설정 정보를 저장하는 객체, 거의 사용하지 않음
 ##### &emsp; 9. exception 객체: JSP 페이지의 예외처리를 담당하는 객체
-&emsp;&emsp; - directive의 errorPage, isErrorPage 설정과 함께 사용하는 객체.
+&emsp;&emsp; - directive의 errorPage, isErrorPage 설정과 함께 사용하는 객체.<br>
 &emsp;&emsp; - 위의 2가지 기능을 사용하지 않으므로, exception 객체도 사용하지 않음.
 <br>
 
