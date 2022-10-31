@@ -22,7 +22,7 @@ comments : True
 <br>
 
 #### <span style="color:cornflowerblue">예제</span>
-##### Q: 사번이 7788인 사원의 사번, 사원명, 부서번호, 부서명을 출력하시오.
+###### Q: 사번이 7788인 사원의 사번, 사원명, 부서번호, 부서명을 출력하시오.
 ```
 SELECT e.eno, e.ename, e.dno, d.dname
 FROM employee e, department d
@@ -48,7 +48,7 @@ AND e.eno = 7788;
 <br>
 
 #### <span style="color:cornflowerblue">예제</span>
-##### Q: 사번이 7788인 사원의 사번, 사원명, 부서번호, 부서명을 출력하시오.
+###### Q: 사번이 7788인 사원의 사번, 사원명, 부서번호, 부서명을 출력하시오.
 ```
 SELECT eno, ename, dno, dname
 FROM employee NATURAL JOIN department
@@ -73,7 +73,7 @@ WHERE eno = 7788;
 <br>
 
 #### <span style="color:cornflowerblue">예제</span>
-##### Q: 사번이 7788인 사원의 사번, 사원명, 부서번호, 부서명을 출력하시오.
+###### Q: 사번이 7788인 사원의 사번, 사원명, 부서번호, 부서명을 출력하시오.
 ```
 SELECT eno, ename, dno, dname 
 FROM employee JOIN department
@@ -95,7 +95,7 @@ WHERE eno = 7788;
 <br>
 
 #### <span style="color:cornflowerblue">예제</span>
-##### Q: 사번이 7788인 사원의 사번, 사원명, 부서번호, 부서명을 출력하시오.
+###### Q: 사번이 7788인 사원의 사번, 사원명, 부서번호, 부서명을 출력하시오.
 ```
 SELECT eno, ename, e.dno, dname
 FROM employee e JOIN department d 
@@ -107,11 +107,11 @@ WHERE eno = 7788;
 ## 3. Non-이퀴 조인
 #### - 조인 조건이 equal(=)이 아닌 연산자를 사용하는 조인.
 #### - 조인 조건이 특정 범위 내에 있는지를 판별하기 위한 조인 방법.
-<br><br>
+<br>
 
 #### <span style="color:cornflowerblue">예제1</span>
-##### Q: 사번, 사원명, 업무, 급여, 급여등급을 출력하시오.
-##### - 급여등급은 각 사원의 급여를 사용하여 급여등급 테이블의 급여등급을 사용하시오.
+###### Q: 사번, 사원명, 업무, 급여, 급여등급을 출력하시오.
+###### - 급여등급은 각 사원의 급여를 사용하여 급여등급 테이블의 급여등급을 사용하시오.
 ```
 SELECT eno, ename, job, salary, grade
 FROM employee, salgrade
@@ -120,8 +120,8 @@ WHERE salary BETWEEN losal AND hisal;
 <br><br>
 
 #### <span style="color:cornflowerblue">예제2</span>
-##### Q: 사원명, 부서명, 급여, 급여등급을 출력하시오.
-##### - 급여등급은 각 사원의 급여를 사용하여 급여등급 테이블의 급여등급을 사용하시오.
+###### Q: 사원명, 부서명, 급여, 급여등급을 출력하시오.
+###### - 급여등급은 각 사원의 급여를 사용하여 급여등급 테이블의 급여등급을 사용하시오.
 ```
 SELECT e.ename, d.dname, e.salary, s.grade
 FROM employee e JOIN department d ON e.dno = d.dno, salgrade s
