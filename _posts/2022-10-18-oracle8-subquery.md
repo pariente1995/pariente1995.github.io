@@ -24,18 +24,18 @@ comments : True
 
 ## 3. 다중행 서브쿼리
 ##### - 서브쿼리의 결과가 2개 이상인 경우.
-##### - 연산자: in(=any), not in, any(some), all
+##### - 연산자: IN, NOT IN, ANY(=SOME), ALL
 <br><br>
 
-## 4. 다중행 서브쿼리에서 any와 all의 사용 방법
-##### &emsp; 1. any(some): 서브쿼리의 여러 결과 중에서 한 가지만 만족해도 결과를 출력하는 경우.
-&emsp;&emsp; - <b>\< any:</b> 서브쿼리의 여러 결과 중에서 최대값보다 작은 값을 출력<br>
-&emsp;&emsp; - <b>\> any:</b> 서브쿼리의 여러 결과 중에서 최소값보다 큰 값을 출력
+## 4. 다중행 서브쿼리에서 ANY와 ALL의 사용 방법
+##### &emsp; 1. ANY(=SOME): 서브쿼리의 여러 결과 중에서 한 가지만 만족해도 결과를 출력하는 경우.
+&emsp;&emsp; - <b>\< ANY:</b> 서브쿼리의 여러 결과 중에서 최대값보다 작은 값을 출력<br>
+&emsp;&emsp; - <b>\> ANY:</b> 서브쿼리의 여러 결과 중에서 최소값보다 큰 값을 출력
 <br>
 
-##### &emsp; 2. all: 서브쿼리의 여러 결과를 모두 만족해야 결과를 출력하는 경우.
-&emsp;&emsp; - <b>\< all:</b> 서브쿼리의 여러 결과 중에서 최소값보다 작은 값을 출력<br>
-&emsp;&emsp; - <b>\> all:</b> 서브쿼리의 여러 결과 중에서 최대값보다 큰 값을 출력
+##### &emsp; 2. ALL: 서브쿼리의 여러 결과를 모두 만족해야 결과를 출력하는 경우.
+&emsp;&emsp; - <b>\< ALL:</b> 서브쿼리의 여러 결과 중에서 최소값보다 작은 값을 출력<br>
+&emsp;&emsp; - <b>\> ALL:</b> 서브쿼리의 여러 결과 중에서 최대값보다 큰 값을 출력
 <br><br>
 
 #### <span style="color:cornflowerblue">예제1 - 단일행 서브쿼리</span>
@@ -43,11 +43,9 @@ comments : True
 ```
 SELECT eno, ename, job, dno
 FROM employee
-WHERE dno = (SELECT dno 
-               FROM employee 
-              WHERE ename = 'CLARK');
+WHERE dno = (SELECT dno FROM employee WHERE ename = 'CLARK');
 ```
-<br><br>
+<br>
 
 #### <span style="color:cornflowerblue">예제2 - 단일행 서브쿼리</span>
 ###### Q: 최고급여를 받는 사원의 사번, 사원명, 급여를 출력하시오.
@@ -56,7 +54,7 @@ SELECT eno, ename, salary
 FROM employee 
 WHERE salary = (SELECT MAX(salary) from employee);
 ```
-<br><br>
+<br>
 
 #### <span style="color:cornflowerblue">예제3 - 단일행 서브쿼리</span>
 ###### Q: 부서위치가 \'DALLAS\'인 사원의 사원명, 부서번호, 업무를 출력하시오.
@@ -65,4 +63,32 @@ SELECT ename, dno, job
 FROM employee
 WHERE dno = (SELECT dno FROM department WHERE loc = 'DALLAS');
 ```
-<br><br>
+<br>
+
+#### <span style="color:cornflowerblue">예제4 - 다중행 서브쿼리</span>
+###### Q: 부서별 최고급여를 받는 사원의 사원번호와 이름, 부서번호, 급여를 출력하시오.
+```
+SELECT eno, ename, dno, salary
+FROM employee
+WHERE salary in (SELECT MAX(salary) FROM employee GROUP BY dno);
+```
+<br>
+
+#### <span style="color:cornflowerblue">예제5 - 다중행 서브쿼리</span>
+###### Q: 업무가 \'SALESMAN\'이 아니면서, 급여가 임의의 \'SALESMAN\'보다 낮은 사원의 사원번호, 사원명, 급여를 출력하시오.
+```
+SELECT eno, ename, salary
+FROM employee
+WHERE job <> 'SALESMAN'
+AND salary < any (SELECT salary FROM employee WHERE job = 'SALESMAN');
+```
+<br>
+
+#### <span style="color:cornflowerblue">예제6 - 다중행 서브쿼리</span>
+###### Q: 업무가 \'SALESMAN\'이 아니면서, 급여가 모든 \'SALESMAN\'보다 낮은 사원의 사원번호, 사원명, 급여를 출력하시오.
+```
+SELECT eno, ename, salary
+FROM employee
+WHERE job <> 'SALESMAN'
+AND salary < all (SELECT salary FROM employee WHERE job = 'SALESMAN');
+```
