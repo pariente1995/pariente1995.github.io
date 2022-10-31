@@ -128,3 +128,55 @@ FROM employee e JOIN department d ON e.dno = d.dno, salgrade s
 WHERE e.salary BETWEEN s.losal AND s.hisal;
 ```
 <br><br>
+
+## 4. 셀프 조인(Self Join)
+##### - 1개의 테이블을 2개의 테이블로 생각하여 조인하는 방법.
+##### - 조인 대상이 같은 테이블이므로 알리아스를 다르게 설정해야 함.
+##### - 하나의 테이블을 2개로 생각한다는 것만 제외하면, 사용하는 방법은 이퀴조인과 동일.
+<br>
+
+#### <span style="color:cornflowerblue">예제</span>
+###### Q: 사원번호, 사원명, 관리자번호, 관리자명을 출력하시오.
+```
+SELECT e.eno, e.ename, m.eno, m.ename
+FROM employee e, employee m
+WHERE e.manager = m.eno;
+```
+<br><br>
+
+## 5. 아우터 조인(Outer Join)
+##### - 이퀴 조인은 한쪽의 결과값이 null인 데이터는 출력하지 않음.
+##### - 아우터 조인은 이퀴 조인의 결과값이 널인 데이터도 출력하도록 함.
+##### - 아우터 조인을 할 대상 테이블의 컬럼에 \"(+)\" 기호를 붙여서 조인도 가능.
+- <span style="color:red">단, 한쪽에만 \"(+)\" 기호를 붙여서 사용이 가능하다!</span>
+##### - Left Outer Join: 왼쪽 결과값이 기준이고, 널인 데이터가 오른쪽에 있을 때
+##### - Right Outer Join: 오른쪽 결과값이 기준이고, 널인 데이터가 왼쪽에 있을 때
+##### - Full Outer Join: 양쪽 테이블을 모두 읽어서. 중복 데이터는 삭제한 결과
+<br>
+
+#### <span style="color:cornflowerblue">예제</span>
+###### Q: 사원번호, 사원명, 관리자번호, 관리자명을 출력하시오. 관리자가 없는 사원도 출력하도록 하시오.
+###### <mark>1번 방법</mark>
+```
+SELECT e.eno, e.ename, m.eno, m.ename
+FROM employee e 
+LEFT OUTER JOIN employee m ON e.manager = m.eno;
+```
+<br>
+
+###### <mark>2번 방법</mark>
+```
+SELECT e.eno, e.ename, m.eno, m.ename
+FROM employee e 
+INNER JOIN employee m ON e.manager = m.eno(+);
+```
+<br><br>
+
+## 6. 크로스 조인(Cross Join)
+##### - 조인 조건 없이 테이블끼리 조인한 경우
+##### - 카테시안 곱(cartesian product): 크로스 조인의 결과
+##### - 열의 개수: 테이블1의 열수 + 테이블2의 열수
+##### - 행의 개수: 테이블1의 행수 * 테이블2의 행수
+<br>
+ex) SELECT * FROM employee, department;<br>
+ex) SELECT * FROM employee CROSS JOIN department;<br>
