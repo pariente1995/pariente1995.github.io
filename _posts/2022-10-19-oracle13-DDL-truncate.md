@@ -34,3 +34,10 @@ TRUNCATE TABLE DEPT;
 |<b>COMMIT</b>|직접 처리|자동|
 |<b>ROLLBACK 가능 여부</b>|가능|불가능|
 |<b>데이터 공간</b>|그대로 남음|데이터 공간도 삭제|
+
+||DELETE|TRUNCATE|
+|:---:|------|--------|
+|명령어 종류|DML|DDL|
+|COMMIT|직접 처리|자동|
+|ROLLBACK 가능 여부|가능|불가능|
+|데이터 공간|그대로 남음|데이터 공간도 삭제|
