@@ -52,6 +52,7 @@ WHERE list BETWEEN 6 AND 10;
 ###### <span style="color:red">※ ORDER BY절을 사용하여 행번호 출력 시 행번호의 정렬이 틀어지기에,</span>
 ###### <span style="color:red">인라인 뷰를 사용하여 데이터 정렬 후 행번호를 부여한다.</span>
 > 3-3. 데이터를 정렬하여 행번호를 부여 후 출력
+
 ```
 SELECT ROWNUM, e.*
 FROM (SELECT * FROM employee ORDER BY salary DESC) e;
