@@ -40,7 +40,7 @@ comments : True
 
 #### <span style="color:cornflowerblue">예제1 - 단일행 서브쿼리</span>
 ###### Q: \'CLARK\'와 같은 부서에서 근무하는 사원의 사번, 사원명, 업무, 부서번호를 출려하시오.
-```
+```sql
 SELECT eno, ename, job, dno
 FROM employee
 WHERE dno = (SELECT dno FROM employee WHERE ename = 'CLARK');
@@ -49,7 +49,7 @@ WHERE dno = (SELECT dno FROM employee WHERE ename = 'CLARK');
 
 #### <span style="color:cornflowerblue">예제2 - 단일행 서브쿼리</span>
 ###### Q: 최고급여를 받는 사원의 사번, 사원명, 급여를 출력하시오.
-```
+```sql
 SELECT eno, ename, salary
 FROM employee 
 WHERE salary = (SELECT MAX(salary) from employee);
@@ -58,7 +58,7 @@ WHERE salary = (SELECT MAX(salary) from employee);
 
 #### <span style="color:cornflowerblue">예제3 - 단일행 서브쿼리</span>
 ###### Q: 부서위치가 \'DALLAS\'인 사원의 사원명, 부서번호, 업무를 출력하시오.
-```
+```sql
 SELECT ename, dno, job
 FROM employee
 WHERE dno = (SELECT dno FROM department WHERE loc = 'DALLAS');
@@ -67,7 +67,7 @@ WHERE dno = (SELECT dno FROM department WHERE loc = 'DALLAS');
 
 #### <span style="color:cornflowerblue">예제4 - 다중행 서브쿼리</span>
 ###### Q: 부서별 최고급여를 받는 사원의 사원번호와 이름, 부서번호, 급여를 출력하시오.
-```
+```sql
 SELECT eno, ename, dno, salary
 FROM employee
 WHERE salary in (SELECT MAX(salary) FROM employee GROUP BY dno);
@@ -76,7 +76,7 @@ WHERE salary in (SELECT MAX(salary) FROM employee GROUP BY dno);
 
 #### <span style="color:cornflowerblue">예제5 - 다중행 서브쿼리</span>
 ###### Q: 업무가 \'SALESMAN\'이 아니면서, 급여가 임의의 \'SALESMAN\'보다 낮은 사원의 사원번호, 사원명, 급여를 출력하시오.
-```
+```sql
 SELECT eno, ename, salary
 FROM employee
 WHERE job <> 'SALESMAN'
@@ -86,7 +86,7 @@ AND salary < any (SELECT salary FROM employee WHERE job = 'SALESMAN');
 
 #### <span style="color:cornflowerblue">예제6 - 다중행 서브쿼리</span>
 ###### Q: 업무가 \'SALESMAN\'이 아니면서, 급여가 모든 \'SALESMAN\'보다 낮은 사원의 사원번호, 사원명, 급여를 출력하시오.
-```
+```sql
 SELECT eno, ename, salary
 FROM employee
 WHERE job <> 'SALESMAN'

@@ -22,7 +22,7 @@ DML(Data Manipulation Language) 중 DELETE 명령어 알아보기
 
 #### <span style="color:cornflowerblue">예제1</span>
 ###### Q: DEPT 테이블에서 부서번호가 40 또는 50인 데이터를 삭제하시오.
-```
+```sql
 DELETE FROM DEPT
 WHERE dno in (40, 50);
 ```
@@ -30,7 +30,7 @@ WHERE dno in (40, 50);
 
 #### <span style="color:cornflowerblue">예제2</span>
 ###### Q: EMP 테이블에서 부서명이 \'ACCOUNTING\'인 사원의 데이터를 삭제하시오. 
-```
+```sql
 DELETE FROM EMP 
 WHERE dno = (SELECT dno FROM DEPT WHERE dname = 'ACCOUNTING');
 ```
@@ -38,7 +38,7 @@ WHERE dno = (SELECT dno FROM DEPT WHERE dname = 'ACCOUNTING');
 
 #### <span style="color:cornflowerblue">예제3</span>
 ###### Q: EMP 테이블의 모든 데이터를 삭제하시오.
-```
+```sql
 DELETE FROM EMP;
 ```
 <br>

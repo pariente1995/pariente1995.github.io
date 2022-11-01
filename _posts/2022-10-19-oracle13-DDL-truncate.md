@@ -22,7 +22,7 @@ DDL(Data Definition Language) 중 TRUNCATE 명령어 알아보기
 
 #### <span style="color:cornflowerblue">예제</span>
 ###### Q: DEPT 테이블의 모든 데이터를 삭제하시오.
-```
+```sql
 TRUNCATE TABLE DEPT;
 ```
 <br><br>

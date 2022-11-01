@@ -23,7 +23,7 @@ comments : True
 
 #### <span style="color:cornflowerblue">예제</span>
 ###### Q: 사번이 7788인 사원의 사번, 사원명, 부서번호, 부서명을 출력하시오.
-```
+```sql
 SELECT e.eno, e.ename, e.dno, d.dname
 FROM employee e, department d
 WHERE e.dno = d.dno
@@ -49,7 +49,7 @@ AND e.eno = 7788;
 
 #### <span style="color:cornflowerblue">예제</span>
 ###### Q: 사번이 7788인 사원의 사번, 사원명, 부서번호, 부서명을 출력하시오.
-```
+```sql
 SELECT eno, ename, dno, dname
 FROM employee NATURAL JOIN department
 WHERE eno = 7788;
@@ -74,7 +74,7 @@ WHERE eno = 7788;
 
 #### <span style="color:cornflowerblue">예제</span>
 ###### Q: 사번이 7788인 사원의 사번, 사원명, 부서번호, 부서명을 출력하시오.
-```
+```sql
 SELECT eno, ename, dno, dname 
 FROM employee JOIN department
 USING(dno)
@@ -96,7 +96,7 @@ WHERE eno = 7788;
 
 #### <span style="color:cornflowerblue">예제</span>
 ###### Q: 사번이 7788인 사원의 사번, 사원명, 부서번호, 부서명을 출력하시오.
-```
+```sql
 SELECT eno, ename, e.dno, dname
 FROM employee e JOIN department d 
 ON e.dno = d.dno
@@ -112,7 +112,7 @@ WHERE eno = 7788;
 #### <span style="color:cornflowerblue">예제1</span>
 ###### Q: 사번, 사원명, 업무, 급여, 급여등급을 출력하시오.
 ###### - 급여등급은 각 사원의 급여를 사용하여 급여등급 테이블의 급여등급을 사용하시오.
-```
+```sql
 SELECT eno, ename, job, salary, grade
 FROM employee, salgrade
 WHERE salary BETWEEN losal AND hisal;
@@ -122,7 +122,7 @@ WHERE salary BETWEEN losal AND hisal;
 #### <span style="color:cornflowerblue">예제2</span>
 ###### Q: 사원명, 부서명, 급여, 급여등급을 출력하시오.
 ###### - 급여등급은 각 사원의 급여를 사용하여 급여등급 테이블의 급여등급을 사용하시오.
-```
+```sql
 SELECT e.ename, d.dname, e.salary, s.grade
 FROM employee e JOIN department d ON e.dno = d.dno, salgrade s
 WHERE e.salary BETWEEN s.losal AND s.hisal;
@@ -137,7 +137,7 @@ WHERE e.salary BETWEEN s.losal AND s.hisal;
 
 #### <span style="color:cornflowerblue">예제</span>
 ###### Q: 사원번호, 사원명, 관리자번호, 관리자명을 출력하시오.
-```
+```sql
 SELECT e.eno, e.ename, m.eno, m.ename
 FROM employee e, employee m
 WHERE e.manager = m.eno;
@@ -158,7 +158,7 @@ WHERE e.manager = m.eno;
 #### <span style="color:cornflowerblue">예제</span>
 ###### Q: 사원번호, 사원명, 관리자번호, 관리자명을 출력하시오. 관리자가 없는 사원도 출력하도록 하시오.
 ###### <mark>1번 방법</mark>
-```
+```sql
 SELECT e.eno, e.ename, m.eno, m.ename
 FROM employee e 
 LEFT OUTER JOIN employee m ON e.manager = m.eno;
@@ -166,7 +166,7 @@ LEFT OUTER JOIN employee m ON e.manager = m.eno;
 <br>
 
 ###### <mark>2번 방법</mark>
-```
+```sql
 SELECT e.eno, e.ename, m.eno, m.ename
 FROM employee e 
 INNER JOIN employee m ON e.manager = m.eno(+);
