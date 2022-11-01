@@ -49,17 +49,26 @@ WHERE dno = 40;
 
 #### <span style="color:cornflowerblue">예제4</span>
 ###### Q: DEPT 테이블에서 30번 부서의 부서명과 지역명을 20번 부서의 부서명과 지역명으로 변경하시오.
+`1번 방법`
 ```
 UPDATE DEPT 
 SET dname = (SELECT dname FROM DEPT WHERE dno = 20),
 loc = (SELECT loc FROM DEPT WHERE dno = 20)
 WHERE dno = 30;
 ```
+
+`2번 방법 - 한 번에 작성`
+```
+UPDATE DEPT
+SET (dname, loc) = (SELECT dname, loc FROM DEPT WHERE dno = 20)
+WHERE dno = 30;
+```
 <br>
 
-~~~
-UPDATE DEPT 
-   SET dname = (SELECT dname FROM DEPT WHERE dno = 20),
-       loc   = (SELECT loc FROM DEPT WHERE dno = 20)
- WHERE dno = 30;
-~~~
+#### <span style="color:cornflowerblue">예제5</span>
+###### Q: DEPT 테이블에서 모든 지역명을 \'SEOUL\'로 변경하시오.
+```
+UPDATE DEPT
+SET loc = 'SEOUL';
+```
+<br>
