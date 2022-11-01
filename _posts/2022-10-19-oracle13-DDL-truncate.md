@@ -30,7 +30,7 @@ TRUNCATE TABLE DEPT;
 ## 3. DELETE와 TRUNCATE의 차이점
 
 ||<span style="color:cornflowerblue">DELETE</span>|<span style="color:cornflowerblue">TRUNCATE</span>|
-|:---:|------|--------|
+|:---:|------|---------|
 |**명령어 종류**|DML|DDL|
 |**COMMIT**|직접 처리|자동|
 |**ROLLBACK 가능 여부**|가능|불가능|
