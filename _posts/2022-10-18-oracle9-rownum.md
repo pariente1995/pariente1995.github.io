@@ -33,7 +33,7 @@ WHERE ROWNUM <= 3;
 
 #### <span style="color:cornflowerblue">3. 출력할 데이터를 지정하여 행번호를 함께 출력 시, 인라인 뷰를 사용</span>
 ###### <mark>인라인 뷰(Inline View):</mark> FROM절에서 서브쿼리를 사용하여 테이블처럼 사용하는 것.
-> 3-1. 처음부터 사원명 5건 출력
+`3-1. 처음부터 사원명 5건 출력`
 ```
 SELECT * 
 FROM (SELECT ROWNUM AS list, ename FROM employee) 
@@ -41,7 +41,7 @@ WHERE list <= 5;
 ```
 <br>
 
-> 3-2. 행번호를 출력하고, 몇번부터 몇번까지 중간의 범위를 출력
+`3-2. 행번호를 출력하고, 몇번부터 몇번까지 중간의 범위를 출력`
 ```
 SELECT * 
 FROM (SELECT ROWNUM AS list, ename FROM employee) 
@@ -51,8 +51,7 @@ WHERE list BETWEEN 6 AND 10;
 
 ###### <span style="color:red">※ ORDER BY절을 사용하여 행번호 출력 시 행번호의 정렬이 틀어지기에,</span>
 ###### <span style="color:red">인라인 뷰를 사용하여 데이터 정렬 후 행번호를 부여한다.</span>
-> 3-3. 데이터를 정렬하여 행번호를 부여 후 출력
-
+`3-3. 데이터를 정렬하여 행번호를 부여 후 출력`
 ```
 SELECT ROWNUM, e.*
 FROM (SELECT * FROM employee ORDER BY salary DESC) e;
