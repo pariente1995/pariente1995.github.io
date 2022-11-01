@@ -18,7 +18,7 @@ DDL(Data Definition Language) 중 TRUNCATE 명령어 알아보기
 ## 2. TRUNCATE 구문 형식
 > <b>형식: TRUNCATE TABLE 테이블명;</b>
 
-<br><br>
+<br>
 
 #### <span style="color:cornflowerblue">예제</span>
 ###### Q: DEPT 테이블의 모든 데이터를 삭제하시오.
