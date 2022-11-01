@@ -70,7 +70,7 @@ WHERE dno = (SELECT dno FROM department WHERE loc = 'DALLAS');
 ```sql
 SELECT eno, ename, dno, salary
 FROM employee
-WHERE salary in (SELECT MAX(salary) FROM employee GROUP BY dno);
+WHERE salary IN (SELECT MAX(salary) FROM employee GROUP BY dno);
 ```
 <br>
 
@@ -80,7 +80,7 @@ WHERE salary in (SELECT MAX(salary) FROM employee GROUP BY dno);
 SELECT eno, ename, salary
 FROM employee
 WHERE job <> 'SALESMAN'
-AND salary < any (SELECT salary FROM employee WHERE job = 'SALESMAN');
+AND salary < ANY (SELECT salary FROM employee WHERE job = 'SALESMAN');
 ```
 <br>
 
@@ -90,5 +90,5 @@ AND salary < any (SELECT salary FROM employee WHERE job = 'SALESMAN');
 SELECT eno, ename, salary
 FROM employee
 WHERE job <> 'SALESMAN'
-AND salary < all (SELECT salary FROM employee WHERE job = 'SALESMAN');
+AND salary < ALL (SELECT salary FROM employee WHERE job = 'SALESMAN');
 ```

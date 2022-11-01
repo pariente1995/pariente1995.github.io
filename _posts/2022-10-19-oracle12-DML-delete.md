@@ -24,7 +24,7 @@ DML(Data Manipulation Language) 중 DELETE 명령어 알아보기
 ###### Q: DEPT 테이블에서 부서번호가 40 또는 50인 데이터를 삭제하시오.
 ```sql
 DELETE FROM DEPT
-WHERE dno in (40, 50);
+WHERE dno IN (40, 50);
 ```
 <br>
 
