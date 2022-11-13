@@ -23,9 +23,7 @@ comments : True
 - CGI프로그램은 처음에 문제가 없어보였지만, 야후같은 대형사이트(사용자가 다수인)가 등장하면서 문제가 발생하게 된다.
 - 프로세스는 사용자의 요청이 많아지면 메모리가 계속해서 증가하고 먼저 생성된 프로세스가 처리되기 전까지는 다음 프로세스가 진행되지 않는 문제점이 있었다.<br><br>
 `CGI Web`<br>
-![CGI Web]({{ site.baseurl }}/assets/img/CGIweb.PNG){: width="80%"}
-<br>
-
+![CGI Web]({{ site.baseurl }}/assets/img/CGIweb.PNG){: width="80%"}<br>
 `CGI Web 문제점`<br>
 ![CGI Web 문제점]({{ site.baseurl }}/assets/img/CGIweb문제점.PNG){: width="80%"}
 <br><br>
@@ -37,11 +35,9 @@ comments : True
 - 그리고 Java 소스에서 HTML 웹 문서를 만들 수 있도록 구현되어 있어 Web Server 성능을 향상시킴.
 - 하지만 Servlet에서 HTML 웹 문서를 만드는 작업이 매우 복잡하고 귀찮은 작업이었다.<br><br>
 `Servlet`<br>
-![Servlet]({{ site.baseurl }}/assets/img/Servlet.PNG){: width="80%"}
-<br>
-
+![Servlet]({{ site.baseurl }}/assets/img/Servlet.PNG){: width="80%"}<br>
 `Servlet의 쓰레드`<br>
-![Servlet의 쓰레드]({{ site.baseurl }}/assets/img/Servlet의 쓰레드.PNG){: width="80%"}
+![Servlet의 쓰레드]({{ site.baseurl }}/assets/img/Servlet의쓰레드.PNG){: width="80%"}
 <br><br>
 
 #### 3. JSP(Java Server Page)
