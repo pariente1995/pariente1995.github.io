@@ -31,7 +31,7 @@ theme_settings :
       - skill : Database(ORACLE, MSSQL)
         value : 60  # Percent value
       - skill : JSP & Spring
-        value : 0  # Percent value
+        value : 50  # Percent value
         
   # Icons
   icons :
