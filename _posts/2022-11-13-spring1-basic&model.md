@@ -35,7 +35,7 @@ comments : True
 - 그리고 Java 소스에서 HTML 웹 문서를 만들 수 있도록 구현되어 있어 Web Server 성능을 향상시킴.
 - 하지만 Servlet에서 HTML 웹 문서를 만드는 작업이 매우 복잡하고 귀찮은 작업이었다.<br><br>
 `Servlet`<br>
-![Servlet]({{ site.baseurl }}/assets/img/Servlet.PNG){: width="80%"}<br>
+![Servlet]({{ site.baseurl }}/assets/img/Servlet.PNG){: width="100%"}<br>
 `Servlet의 쓰레드`<br>
 ![Servlet의 쓰레드]({{ site.baseurl }}/assets/img/Servlet의쓰레드.PNG){: width="80%"}
 <br><br>
@@ -60,4 +60,4 @@ comments : True
 - PageController 하나만 존재하던 Model 2방식과 다르게 기능별 Controller로 세분화(Http 프로토콜(규약)을 따르는 HttpServlet을 상속받아 구현).
 - Model 부분도 비즈니스 로직을 담당하는 Service, ServiceImpl과 데이터를 담당하는 DAO로 세분화.<br><br>
 `MVC`<br>
-![MVC]({{ site.baseurl }}/assets/img/MVC.PNG){: width="80%"}
+![MVC]({{ site.baseurl }}/assets/img/MVC.PNG){: width="100%"}
